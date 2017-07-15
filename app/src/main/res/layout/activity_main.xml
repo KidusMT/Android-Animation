@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context="com.kidusmt.android.animationpractice.MainActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:textColor="#121212"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SharedElement Transition Animation" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="#121212"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on the Image to see the effect" />
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center"
+                android:id="@+id/tv_rowan"
+                android:transitionName="tv_rowan_shared"
+                android:text="Rowan Atkinson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image_one"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/rowan"
+                android:transitionName="rowan_shared" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="16dp"
+                android:id="@+id/tv_kidus"
+                android:transitionName="tv_kidus_shared"
+                android:textAlignment="center"
+                android:text="KidusMT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image_two"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/kidus"
+                android:transitionName="kidus_shared" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="16dp"
+                android:id="@+id/tv_jobs"
+                android:transitionName="tv_jobs_shared"
+                android:textAlignment="center"
+                android:text="Steve Jobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/image_three"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/jobs"
+                android:transitionName="jobs_shared" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Practicing the SharedElement Transition Animation"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
